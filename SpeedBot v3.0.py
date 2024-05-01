@@ -4670,7 +4670,10 @@ def trip():
 def gutter():
 
     
-    link = "https://guttergrab.com/referral/2BjWeoQj6"
+    #link = "https://guttergrab.com/referral/2BjWeoQj6" # SUNDEE
+    link = "https://guttergrab.com/referral/P8DN2Zn56"  # TAO
+
+
     
     try:
         driver.get(link)
