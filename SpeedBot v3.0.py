@@ -4822,7 +4822,7 @@ for i in range(liczba_wierszy):
         #pump()
 
         gutter()
-##
+## kurwa
     except:        
         print("SPEED BOT - - - WYJEBAŁO AIRDROPY !")
         petla_nr = petla_nr +1
