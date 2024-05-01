@@ -4667,6 +4667,40 @@ def trip():
 #         )
 #         button1.click()
 
+def gutter():
+
+    
+    link = "https://guttergrab.com/referral/2BjWeoQj6"
+    
+    try:
+        driver.get(link)
+        time.sleep(2)
+
+        twitter_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, '//*[@id="__next"]/div[2]/main/div[3]/button')) 
+        )
+        twitter_button.click()
+
+        autohrize_twitter_2 = WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]/div/div/div[2]/main/div/div/div[2]/div/div/div[1]/div[3]/div')) 
+        )
+        autohrize_twitter_2.click()
+
+        accept_gutter_terms = WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, '//*[@id="radix-:r2:"]/div[2]/div[1]/button')) 
+        )
+        accept_gutter_terms.click()
+
+        accept2 = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, '//*[@id="radix-:r0:"]/div/div/button[2]'))# or
+            #EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'LOGIN WITH X')]"))
+        )
+        accept2.click()
+
+        time.sleep(1)
+        
+    except Exception:
+        print("gutter NIE wykonany !!")
 
 
 
@@ -4785,7 +4819,9 @@ for i in range(liczba_wierszy):
 
         #mon()
 
-        pump()
+        #pump()
+
+        gutter()
 
     except:        
         print("SPEED BOT - - - WYJEBAŁO AIRDROPY !")
